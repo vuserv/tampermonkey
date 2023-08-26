@@ -1,0 +1,17 @@
+// ==UserScript==
+// @name         Afficher nom univers
+// @namespace    http://tampermonkey.net/
+// @version      1
+// @description  try to take over the world!
+// @author       You
+// @match        https://ikea-extranet.minutpass.com/places/cel/universe/fefcbcb4-8835-43bd-ac87-ffa3b9a4bd89/tickets/list
+// @match        https://ikea-extranet.minutpass.com/places/cel/ticket-offices/commande-cuisine-online/tickets/list
+// @match        https://ikea-extranet.minutpass.com/places/cel/ticket-offices/conception-cuisine-online/tickets/list
+// @icon         https://www.google.com/s2/favicons?sz=64&domain=minutpass.com
+// @grant        none
+// ==/UserScript==
+
+(function() {
+document.querySelectorAll('.collaborator.text-left.mb-5.small.hide').forEach(item => item.classList.replace('hide', 'show'));
+
+})();
